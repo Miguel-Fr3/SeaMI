@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaMI", "SeaMI\SeaMI.csproj", "{46902ADF-9801-4D97-B234-428467F59D52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46902ADF-9801-4D97-B234-428467F59D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46902ADF-9801-4D97-B234-428467F59D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46902ADF-9801-4D97-B234-428467F59D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46902ADF-9801-4D97-B234-428467F59D52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {925A8A8E-BE25-463A-8BBA-65B12E229620}
+	EndGlobalSection
+EndGlobal
