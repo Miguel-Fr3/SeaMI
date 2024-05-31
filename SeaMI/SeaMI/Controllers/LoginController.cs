@@ -22,7 +22,7 @@ namespace SeaMI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Login.ToListAsync());
+            return View(await _context.Logins.ToListAsync());
         }
 
 
@@ -33,7 +33,7 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var login = await _context.Login
+            var login = await _context.Logins
                 .FirstOrDefaultAsync(m => m.cdLogin == id);
             if (login == null)
             {
@@ -71,7 +71,7 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var login = await _context.Login.FindAsync(id);
+            var login = await _context.Logins.FindAsync(id);
             if (login == null)
             {
                 return NotFound();
@@ -119,7 +119,7 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var login = await _context.Login
+            var login = await _context.Logins
                 .FirstOrDefaultAsync(m => m.cdLogin == id);
             if (login == null)
             {
@@ -134,10 +134,10 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var login = await _context.Login.FindAsync(id);
+            var login = await _context.Logins.FindAsync(id);
             if (login != null)
             {
-                _context.Login.Remove(login);
+                _context.Logins.Remove(login);
             }
 
             await _context.SaveChangesAsync();
@@ -146,7 +146,7 @@ namespace SeaMI.Controllers
 
         private bool LoginExists(int id)
         {
-            return _context.Login.Any(e => e.cdLogin == id);
+            return _context.Logins.Any(e => e.cdLogin == id);
         }
     }
 }

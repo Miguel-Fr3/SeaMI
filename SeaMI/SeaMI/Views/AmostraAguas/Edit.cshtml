@@ -1,0 +1,69 @@
+﻿@model SeaMI.Models.AmostraAgua
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>AmostraAgua</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="cdAmostra" />
+            <div class="form-group">
+                <label asp-for="dtColeta" class="control-label"></label>
+                <input asp-for="dtColeta" class="form-control" />
+                <span asp-validation-for="dtColeta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsPH" class="control-label"></label>
+                <input asp-for="dsPH" class="form-control" />
+                <span asp-validation-for="dsPH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsPoluentesQuimicos" class="control-label"></label>
+                <input asp-for="dsPoluentesQuimicos" class="form-control" />
+                <span asp-validation-for="dsPoluentesQuimicos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsNutrientes" class="control-label"></label>
+                <input asp-for="dsNutrientes" class="form-control" />
+                <span asp-validation-for="dsNutrientes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsConcentracaoPlastico" class="control-label"></label>
+                <input asp-for="dsConcentracaoPlastico" class="form-control" />
+                <span asp-validation-for="dsConcentracaoPlastico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsOxigenioDissolvido" class="control-label"></label>
+                <input asp-for="dsOxigenioDissolvido" class="form-control" />
+                <span asp-validation-for="dsOxigenioDissolvido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsTemperatura" class="control-label"></label>
+                <input asp-for="dsTemperatura" class="form-control" />
+                <span asp-validation-for="dsTemperatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dsTurbidez" class="control-label"></label>
+                <input asp-for="dsTurbidez" class="form-control" />
+                <span asp-validation-for="dsTurbidez" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

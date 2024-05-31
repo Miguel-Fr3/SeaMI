@@ -26,6 +26,66 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Pichau\Desktop\Nova pasta\SeaMI\SeaMI\SeaMI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraAguas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYUFndWFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraAguas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYUFndWFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraAguas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYUFndWFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraAguas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYUFndWFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraAguas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYUFndWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraUsuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYVVzdWFyaW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraUsuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYVVzdWFyaW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraUsuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYVVzdWFyaW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraUsuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYVVzdWFyaW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AmostraUsuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vc3RyYVVzdWFyaW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AprovacaoRelatorios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXByb3ZhY2FvUmVsYXRvcmlvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AprovacaoRelatorios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXByb3ZhY2FvUmVsYXRvcmlvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AprovacaoRelatorios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXByb3ZhY2FvUmVsYXRvcmlvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AprovacaoRelatorios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXByb3ZhY2FvUmVsYXRvcmlvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/AprovacaoRelatorios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXByb3ZhY2FvUmVsYXRvcmlvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,12 +114,92 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/MonitoramentoAguas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcmFtZW50b0FndWFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/MonitoramentoAguas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcmFtZW50b0FndWFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/MonitoramentoAguas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcmFtZW50b0FndWFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/MonitoramentoAguas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcmFtZW50b0FndWFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/MonitoramentoAguas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcmFtZW50b0FndWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/RelatorioAguas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvQWd1YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/RelatorioAguas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvQWd1YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/RelatorioAguas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvQWd1YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/RelatorioAguas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvQWd1YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/RelatorioAguas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvQWd1YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Sensores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Sensores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Sensores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Sensores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Sensores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pichau/Desktop/Nova pasta/SeaMI/SeaMI/SeaMI/Views/_ViewImports.cshtml]

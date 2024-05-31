@@ -1,0 +1,66 @@
+﻿@model SeaMI.Models.AmostraAgua
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AmostraAgua</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dtColeta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dtColeta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsPH)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsPH)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsPoluentesQuimicos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsPoluentesQuimicos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsNutrientes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsNutrientes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsConcentracaoPlastico)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsConcentracaoPlastico)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsOxigenioDissolvido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsOxigenioDissolvido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsTemperatura)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsTemperatura)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsTurbidez)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsTurbidez)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.cdAmostra">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

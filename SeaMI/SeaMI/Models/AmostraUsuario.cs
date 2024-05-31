@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SeaMI.Models
 {
-    [Table("T_GS_AMOSTRA_AGUA")]
+    [Table("T_GS_AMOSTRA_USUARIO")]
     public class AmostraUsuario
     {
         public AmostraUsuario() {}

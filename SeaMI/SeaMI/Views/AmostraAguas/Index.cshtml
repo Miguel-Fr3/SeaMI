@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SeaMI.Models.AmostraAgua>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.dtColeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsPH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsPoluentesQuimicos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsNutrientes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsConcentracaoPlastico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsOxigenioDissolvido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsTemperatura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsTurbidez)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.dtColeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsPH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsPoluentesQuimicos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsNutrientes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsConcentracaoPlastico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsOxigenioDissolvido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsTemperatura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsTurbidez)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.cdAmostra">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.cdAmostra">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.cdAmostra">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

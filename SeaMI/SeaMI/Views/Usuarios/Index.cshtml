@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SeaMI.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nmUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nrDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nrTelefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsArea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsNacionalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dtNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dtCadastro)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login.dsEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nmUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nrDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nrTelefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsArea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsNacionalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dtNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dtCadastro)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.cdUsuario">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.cdUsuario">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.cdUsuario">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

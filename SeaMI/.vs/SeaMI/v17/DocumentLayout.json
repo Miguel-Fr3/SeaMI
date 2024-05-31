@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\aprovacaorelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\aprovacaorelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\sensores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\sensores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\sensorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\sensorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\monitoramentoagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\monitoramentoagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\relatorioaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\relatorioaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\relatorioagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\relatorioagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\monitoramentoaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\monitoramentoaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\aprovacaorelatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\aprovacaorelatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\amostrausuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\amostrausuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\amostraaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\amostraaguascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\amostrausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +43,32 @@
       "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\amostraagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\amostraagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\amostraagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\amostraagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\aprovacaorelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\aprovacaorelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\monitoramentoagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\monitoramentoagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\sensores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\sensores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\relatorioagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\relatorioagua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +78,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:46:10.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\SensoresController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\SensoresController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\SensoresController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\SensoresController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:45:35.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RelatorioAguasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\RelatorioAguasController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\RelatorioAguasController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\RelatorioAguasController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\RelatorioAguasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:44:59.208Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MonitoramentoAguasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\MonitoramentoAguasController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\MonitoramentoAguasController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\MonitoramentoAguasController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\MonitoramentoAguasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:44:01.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AprovacaoRelatoriosController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AprovacaoRelatoriosController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\AprovacaoRelatoriosController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AprovacaoRelatoriosController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\AprovacaoRelatoriosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:43:07.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AmostraUsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AmostraUsuariosController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\AmostraUsuariosController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AmostraUsuariosController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\AmostraUsuariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:42:24.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AmostraAguasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AmostraAguasController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\AmostraAguasController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\AmostraAguasController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\AmostraAguasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:41:43.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwJIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:26:19.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SeaMI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:23:21.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "RelatorioAgua.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\RelatorioAgua.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\RelatorioAgua.cs",
@@ -59,20 +216,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "MonitoramentoAgua.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\MonitoramentoAgua.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\MonitoramentoAgua.cs",
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\MonitoramentoAgua.cs",
               "RelativeToolTip": "SeaMI\\Models\\MonitoramentoAgua.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowBYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:47:02.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "Sensores.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Sensores.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\Sensores.cs",
@@ -85,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "AprovacaoRelatorio.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\AprovacaoRelatorio.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\AprovacaoRelatorio.cs",
@@ -98,56 +255,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "AmostraUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\AmostraUsuario.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\AmostraUsuario.cs",
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\AmostraUsuario.cs",
               "RelativeToolTip": "SeaMI\\Models\\AmostraUsuario.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwAYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:21:15.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
               "RelativeToolTip": "SeaMI\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:19:12.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Login.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\Login.cs",
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Login.cs",
               "RelativeToolTip": "SeaMI\\Models\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:18:22.648Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AmostraAgua.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\AmostraAgua.cs",
               "RelativeDocumentMoniker": "SeaMI\\Models\\AmostraAgua.cs",
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\AmostraAgua.cs",
               "RelativeToolTip": "SeaMI\\Models\\AmostraAgua.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:18:18.584Z",
               "EditorCaption": ""

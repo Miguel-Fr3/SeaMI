@@ -1,0 +1,42 @@
+﻿@model SeaMI.Models.AmostraUsuario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AmostraUsuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Usuario.dsArea)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AmostraAgua)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AmostraAgua.dsConcentracaoPlastico)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dsAmostra)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dsAmostra)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dtAmostra)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dtAmostra)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.cdAmostraUser">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

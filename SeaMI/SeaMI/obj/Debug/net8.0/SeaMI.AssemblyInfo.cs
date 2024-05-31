@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeaMI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e931df8c02d8dfe8073b22574f99afc6b52757b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c77f6eaa008da1b37c79e07a8157e3ee3ba6333f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeaMI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeaMI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
