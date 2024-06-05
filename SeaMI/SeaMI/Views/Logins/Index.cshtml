@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SeaMI.Models.Login>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.dsEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dsSenha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dsSenha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.dsNacionalidade)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.cdLogin">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.cdLogin">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.cdLogin">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

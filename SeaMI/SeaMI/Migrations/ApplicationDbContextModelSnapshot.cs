@@ -30,6 +30,9 @@ namespace SeaMI.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdAmostra"));
 
+                    b.Property<int>("cdUsuario")
+                        .HasColumnType("NUMBER(10)");
+
                     b.Property<string>("dsConcentracaoPlastico")
                         .IsRequired()
                         .HasMaxLength(15)
@@ -47,8 +50,8 @@ namespace SeaMI.Migrations
 
                     b.Property<string>("dsPH")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("NVARCHAR2(15)");
+                        .HasMaxLength(10)
+                        .HasColumnType("NVARCHAR2(10)");
 
                     b.Property<string>("dsPoluentesQuimicos")
                         .IsRequired()
@@ -70,67 +73,9 @@ namespace SeaMI.Migrations
 
                     b.HasKey("cdAmostra");
 
-                    b.ToTable("T_GS_AMOSTRA_AGUA");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.AmostraUsuario", b =>
-                {
-                    b.Property<int>("cdAmostraUser")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdAmostraUser"));
-
-                    b.Property<int>("cdAmostra")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<int>("cdUsuario")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("dsAmostra")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("NVARCHAR2(250)");
-
-                    b.Property<DateTime>("dtAmostra")
-                        .HasColumnType("DATE");
-
-                    b.HasKey("cdAmostraUser");
-
-                    b.HasIndex("cdAmostra");
-
                     b.HasIndex("cdUsuario");
 
-                    b.ToTable("T_GS_AMOSTRA_USUARIO");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.AprovacaoRelatorio", b =>
-                {
-                    b.Property<int>("cdAprovacao")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdAprovacao"));
-
-                    b.Property<int>("cdUsuario")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("dsComentario")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("NVARCHAR2(250)");
-
-                    b.Property<DateTime>("dtAprovacao")
-                        .HasColumnType("DATE");
-
-                    b.Property<int>("fgAprovado")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.HasKey("cdAprovacao");
-
-                    b.HasIndex("cdUsuario");
-
-                    b.ToTable("T_GS_APROVACAO_RELATORIO");
+                    b.ToTable("TB_GS_AMOSTRA_AGUA", (string)null);
                 });
 
             modelBuilder.Entity("SeaMI.Models.Login", b =>
@@ -141,6 +86,9 @@ namespace SeaMI.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdLogin"));
 
+                    b.Property<int>("cdUsuario")
+                        .HasColumnType("NUMBER(10)");
+
                     b.Property<string>("dsEmail")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -148,46 +96,17 @@ namespace SeaMI.Migrations
 
                     b.Property<string>("dsSenha")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
-
-                    b.Property<int>("fgAtivo")
-                        .HasColumnType("NUMBER(10)");
+                        .HasMaxLength(15)
+                        .HasColumnType("NVARCHAR2(15)");
 
                     b.HasKey("cdLogin");
 
-                    b.ToTable("T_GS_LOGIN");
+                    b.HasIndex("cdUsuario");
+
+                    b.ToTable("TB_GS_LOGIN", (string)null);
                 });
 
-            modelBuilder.Entity("SeaMI.Models.MonitoramentoAgua", b =>
-                {
-                    b.Property<int>("cdMonitoramentoAgua")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdMonitoramentoAgua"));
-
-                    b.Property<int>("cdAmostra")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<int>("cdSensor")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("dsMonitoramento")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("NVARCHAR2(250)");
-
-                    b.HasKey("cdMonitoramentoAgua");
-
-                    b.HasIndex("cdAmostra");
-
-                    b.HasIndex("cdSensor");
-
-                    b.ToTable("T_GS_MONITORAMENTO_AGUA");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.RelatorioAgua", b =>
+            modelBuilder.Entity("SeaMI.Models.Relatorio", b =>
                 {
                     b.Property<int>("cdRelatorio")
                         .ValueGeneratedOnAdd()
@@ -195,58 +114,55 @@ namespace SeaMI.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdRelatorio"));
 
-                    b.Property<int>("cdAprovacao")
-                        .HasColumnType("NUMBER(10)");
-
                     b.Property<int>("cdUsuario")
                         .HasColumnType("NUMBER(10)");
 
                     b.Property<string>("dsRelatorio")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("NVARCHAR2(500)");
+                        .HasMaxLength(200)
+                        .HasColumnType("NVARCHAR2(200)");
 
                     b.Property<DateTime>("dtRelatorio")
                         .HasColumnType("DATE");
 
-                    b.HasKey("cdRelatorio");
+                    b.Property<string>("nmRelatorio")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR2(100)");
 
-                    b.HasIndex("cdAprovacao");
+                    b.HasKey("cdRelatorio");
 
                     b.HasIndex("cdUsuario");
 
-                    b.ToTable("T_GS_RELATORIO_AGUA");
+                    b.ToTable("TB_GS_RELATORIO", (string)null);
                 });
 
-            modelBuilder.Entity("SeaMI.Models.Sensores", b =>
+            modelBuilder.Entity("SeaMI.Models.RelatorioAmostra", b =>
                 {
-                    b.Property<int>("cdSensor")
+                    b.Property<int>("cdRelatorioAmostra")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("NUMBER(10)");
 
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdSensor"));
+                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdRelatorioAmostra"));
 
-                    b.Property<int>("cdUsuario")
+                    b.Property<int>("cdAmostra")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<string>("dsSensor")
+                    b.Property<int>("cdRelatorio")
+                        .HasColumnType("NUMBER(10)");
+
+                    b.Property<string>("dsRelatorioAmostra")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("NVARCHAR2(250)");
+                        .HasMaxLength(200)
+                        .HasColumnType("NVARCHAR2(200)");
 
-                    b.Property<DateTime>("dtImplementacao")
-                        .HasColumnType("DATE");
+                    b.HasKey("cdRelatorioAmostra");
 
-                    b.Property<string>("nmTecnologia")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
+                    b.HasIndex("cdAmostra");
 
-                    b.HasKey("cdSensor");
+                    b.HasIndex("cdRelatorio");
 
-                    b.HasIndex("cdUsuario");
-
-                    b.ToTable("T_GS_SENSORES");
+                    b.ToTable("TB_GS_RELATORIO_AMOSTRA", (string)null);
                 });
 
             modelBuilder.Entity("SeaMI.Models.Usuario", b =>
@@ -256,14 +172,6 @@ namespace SeaMI.Migrations
                         .HasColumnType("NUMBER(10)");
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdUsuario"));
-
-                    b.Property<int>("cdLogin")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("dsArea")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
 
                     b.Property<string>("dsNacionalidade")
                         .IsRequired()
@@ -281,111 +189,95 @@ namespace SeaMI.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR2(100)");
 
-                    b.Property<string>("nrDocumento")
+                    b.Property<string>("nrCpf")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("NVARCHAR2(15)");
+
+                    b.Property<string>("nrRG")
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("NVARCHAR2(15)");
 
                     b.Property<string>("nrTelefone")
                         .IsRequired()
-                        .HasMaxLength(14)
-                        .HasColumnType("NVARCHAR2(14)");
+                        .HasMaxLength(15)
+                        .HasColumnType("NVARCHAR2(15)");
 
                     b.HasKey("cdUsuario");
 
-                    b.HasIndex("cdLogin");
-
-                    b.ToTable("T_GS_USUARIO");
+                    b.ToTable("TB_GS_USUARIO", (string)null);
                 });
 
-            modelBuilder.Entity("SeaMI.Models.AmostraUsuario", b =>
+            modelBuilder.Entity("SeaMI.Models.AmostraAgua", b =>
+                {
+                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
+                        .WithMany("AmostrasAgua")
+                        .HasForeignKey("cdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("SeaMI.Models.Login", b =>
+                {
+                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
+                        .WithMany("Logins")
+                        .HasForeignKey("cdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("SeaMI.Models.Relatorio", b =>
+                {
+                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
+                        .WithMany("Relatorios")
+                        .HasForeignKey("cdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("SeaMI.Models.RelatorioAmostra", b =>
                 {
                     b.HasOne("SeaMI.Models.AmostraAgua", "AmostraAgua")
-                        .WithMany()
+                        .WithMany("RelatoriosAmostra")
                         .HasForeignKey("cdAmostra")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("cdUsuario")
+                    b.HasOne("SeaMI.Models.Relatorio", "Relatorio")
+                        .WithMany("RelatoriosAmostra")
+                        .HasForeignKey("cdRelatorio")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("AmostraAgua");
 
-                    b.Navigation("Usuario");
+                    b.Navigation("Relatorio");
                 });
 
-            modelBuilder.Entity("SeaMI.Models.AprovacaoRelatorio", b =>
+            modelBuilder.Entity("SeaMI.Models.AmostraAgua", b =>
                 {
-                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("cdUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
+                    b.Navigation("RelatoriosAmostra");
                 });
 
-            modelBuilder.Entity("SeaMI.Models.MonitoramentoAgua", b =>
+            modelBuilder.Entity("SeaMI.Models.Relatorio", b =>
                 {
-                    b.HasOne("SeaMI.Models.AmostraAgua", "AmostraAgua")
-                        .WithMany()
-                        .HasForeignKey("cdAmostra")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SeaMI.Models.Sensores", "Sensores")
-                        .WithMany()
-                        .HasForeignKey("cdSensor")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AmostraAgua");
-
-                    b.Navigation("Sensores");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.RelatorioAgua", b =>
-                {
-                    b.HasOne("SeaMI.Models.AprovacaoRelatorio", "AprovacaoRelatorio")
-                        .WithMany()
-                        .HasForeignKey("cdAprovacao")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("cdUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AprovacaoRelatorio");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.Sensores", b =>
-                {
-                    b.HasOne("SeaMI.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("cdUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
+                    b.Navigation("RelatoriosAmostra");
                 });
 
             modelBuilder.Entity("SeaMI.Models.Usuario", b =>
                 {
-                    b.HasOne("SeaMI.Models.Login", "Login")
-                        .WithMany()
-                        .HasForeignKey("cdLogin")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("AmostrasAgua");
 
-                    b.Navigation("Login");
+                    b.Navigation("Logins");
+
+                    b.Navigation("Relatorios");
                 });
 #pragma warning restore 612, 618
         }

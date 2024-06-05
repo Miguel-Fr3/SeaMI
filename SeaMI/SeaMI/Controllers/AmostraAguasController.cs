@@ -22,7 +22,8 @@ namespace SeaMI.Controllers
         // GET: AmostraAguas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AmostraAguas.ToListAsync());
+            var applicationDbContext = _context.AmostrasAgua.Include(a => a.Usuario);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: AmostraAguas/Details/5
@@ -33,7 +34,8 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var amostraAgua = await _context.AmostraAguas
+            var amostraAgua = await _context.AmostrasAgua
+                .Include(a => a.Usuario)
                 .FirstOrDefaultAsync(m => m.cdAmostra == id);
             if (amostraAgua == null)
             {
@@ -46,6 +48,7 @@ namespace SeaMI.Controllers
         // GET: AmostraAguas/Create
         public IActionResult Create()
         {
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace SeaMI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("cdAmostra,dtColeta,dsPH,dsPoluentesQuimicos,dsNutrientes,dsConcentracaoPlastico,dsOxigenioDissolvido,dsTemperatura,dsTurbidez")] AmostraAgua amostraAgua)
+        public async Task<IActionResult> Create([Bind("cdAmostra,dtColeta,dsPH,dsPoluentesQuimicos,dsNutrientes,dsConcentracaoPlastico,dsOxigenioDissolvido,dsTemperatura,dsTurbidez,cdUsuario")] AmostraAgua amostraAgua)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace SeaMI.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", amostraAgua.cdUsuario);
             return View(amostraAgua);
         }
 
@@ -73,11 +77,12 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var amostraAgua = await _context.AmostraAguas.FindAsync(id);
+            var amostraAgua = await _context.AmostrasAgua.FindAsync(id);
             if (amostraAgua == null)
             {
                 return NotFound();
             }
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", amostraAgua.cdUsuario);
             return View(amostraAgua);
         }
 
@@ -86,7 +91,7 @@ namespace SeaMI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("cdAmostra,dtColeta,dsPH,dsPoluentesQuimicos,dsNutrientes,dsConcentracaoPlastico,dsOxigenioDissolvido,dsTemperatura,dsTurbidez")] AmostraAgua amostraAgua)
+        public async Task<IActionResult> Edit(int id, [Bind("cdAmostra,dtColeta,dsPH,dsPoluentesQuimicos,dsNutrientes,dsConcentracaoPlastico,dsOxigenioDissolvido,dsTemperatura,dsTurbidez,cdUsuario")] AmostraAgua amostraAgua)
         {
             if (id != amostraAgua.cdAmostra)
             {
@@ -113,6 +118,7 @@ namespace SeaMI.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", amostraAgua.cdUsuario);
             return View(amostraAgua);
         }
 
@@ -124,7 +130,8 @@ namespace SeaMI.Controllers
                 return NotFound();
             }
 
-            var amostraAgua = await _context.AmostraAguas
+            var amostraAgua = await _context.AmostrasAgua
+                .Include(a => a.Usuario)
                 .FirstOrDefaultAsync(m => m.cdAmostra == id);
             if (amostraAgua == null)
             {
@@ -139,10 +146,10 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var amostraAgua = await _context.AmostraAguas.FindAsync(id);
+            var amostraAgua = await _context.AmostrasAgua.FindAsync(id);
             if (amostraAgua != null)
             {
-                _context.AmostraAguas.Remove(amostraAgua);
+                _context.AmostrasAgua.Remove(amostraAgua);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +158,7 @@ namespace SeaMI.Controllers
 
         private bool AmostraAguaExists(int id)
         {
-            return _context.AmostraAguas.Any(e => e.cdAmostra == id);
+            return _context.AmostrasAgua.Any(e => e.cdAmostra == id);
         }
     }
 }

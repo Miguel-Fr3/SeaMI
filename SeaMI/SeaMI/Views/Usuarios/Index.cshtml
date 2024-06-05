@@ -13,22 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Login)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.nmUsuario)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.nrDocumento)
+                @Html.DisplayNameFor(model => model.nrRG)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.nrTelefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.dsArea)
+                @Html.DisplayNameFor(model => model.nrCpf)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.dsNacionalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nrTelefone)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.dtNascimento)
@@ -43,22 +40,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Login.dsEmail)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.nmUsuario)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.nrDocumento)
+                @Html.DisplayFor(modelItem => item.nrRG)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.nrTelefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dsArea)
+                @Html.DisplayFor(modelItem => item.nrCpf)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.dsNacionalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nrTelefone)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.dtNascimento)
