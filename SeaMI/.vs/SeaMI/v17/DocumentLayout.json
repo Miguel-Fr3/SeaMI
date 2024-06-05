@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\views\\logins\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\views\\logins\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\controllers\\loginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Login.cs",
-              "RelativeDocumentMoniker": "SeaMI\\Models\\Login.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Login.cs",
-              "RelativeToolTip": "SeaMI\\Models\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T16:30:56.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Views\\Usuarios\\Create.cshtml",
-              "RelativeDocumentMoniker": "SeaMI\\Views\\Usuarios\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Views\\Usuarios\\Create.cshtml",
-              "RelativeToolTip": "SeaMI\\Views\\Usuarios\\Create.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T16:25:41.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "SeaMI\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
-              "RelativeToolTip": "SeaMI\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Title": "LoginsController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\LoginsController.cs",
+              "RelativeDocumentMoniker": "SeaMI\\Controllers\\LoginsController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Controllers\\LoginsController.cs",
+              "RelativeToolTip": "SeaMI\\Controllers\\LoginsController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwGsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T16:24:14.897Z",
+              "WhenOpened": "2024-06-05T19:58:08.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Views\\Logins\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SeaMI\\Views\\Logins\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Views\\Logins\\Edit.cshtml",
+              "RelativeToolTip": "SeaMI\\Views\\Logins\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T19:55:32.565Z",
               "EditorCaption": ""
             }
           ]

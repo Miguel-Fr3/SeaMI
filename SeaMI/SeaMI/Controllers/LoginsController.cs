@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -48,8 +49,9 @@ namespace SeaMI.Controllers
         // GET: Logins/Create
         public IActionResult Create()
         {
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade");
+            ViewBag.Usuarios = _context.Usuarios.ToList();
             return View();
+
         }
 
         // POST: Logins/Create
@@ -59,13 +61,17 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("cdLogin,dsEmail,dsSenha,cdUsuario")] Login login)
         {
-            if (ModelState.IsValid)
+            try
             {
                 _context.Add(login);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", login.cdUsuario);
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
+            }
             return View(login);
         }
 
@@ -121,6 +127,7 @@ namespace SeaMI.Controllers
             ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", login.cdUsuario);
             return View(login);
         }
+
 
         // GET: Logins/Delete/5
         public async Task<IActionResult> Delete(int? id)

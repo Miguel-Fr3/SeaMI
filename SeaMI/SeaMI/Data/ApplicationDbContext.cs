@@ -46,6 +46,8 @@ namespace SeaMI.Data
                 .HasOne(ra => ra.Relatorio)
                 .WithMany(r => r.RelatoriosAmostra)
                 .HasForeignKey(ra => ra.cdRelatorio);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
