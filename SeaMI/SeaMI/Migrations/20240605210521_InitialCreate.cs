@@ -100,33 +100,6 @@ namespace SeaMI.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "TB_GS_RELATORIO_AMOSTRA",
-                columns: table => new
-                {
-                    cdRelatorioAmostra = table.Column<int>(type: "NUMBER(10)", nullable: false)
-                        .Annotation("Oracle:Identity", "START WITH 1 INCREMENT BY 1"),
-                    dsRelatorioAmostra = table.Column<string>(type: "NVARCHAR2(200)", maxLength: 200, nullable: false),
-                    cdAmostra = table.Column<int>(type: "NUMBER(10)", nullable: false),
-                    cdRelatorio = table.Column<int>(type: "NUMBER(10)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TB_GS_RELATORIO_AMOSTRA", x => x.cdRelatorioAmostra);
-                    table.ForeignKey(
-                        name: "FK_TB_GS_RELATORIO_AMOSTRA_TB_GS_AMOSTRA_AGUA_cdAmostra",
-                        column: x => x.cdAmostra,
-                        principalTable: "TB_GS_AMOSTRA_AGUA",
-                        principalColumn: "cdAmostra",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_TB_GS_RELATORIO_AMOSTRA_TB_GS_RELATORIO_cdRelatorio",
-                        column: x => x.cdRelatorio,
-                        principalTable: "TB_GS_RELATORIO",
-                        principalColumn: "cdRelatorio",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_TB_GS_AMOSTRA_AGUA_cdUsuario",
                 table: "TB_GS_AMOSTRA_AGUA",
@@ -141,29 +114,16 @@ namespace SeaMI.Migrations
                 name: "IX_TB_GS_RELATORIO_cdUsuario",
                 table: "TB_GS_RELATORIO",
                 column: "cdUsuario");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TB_GS_RELATORIO_AMOSTRA_cdAmostra",
-                table: "TB_GS_RELATORIO_AMOSTRA",
-                column: "cdAmostra");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TB_GS_RELATORIO_AMOSTRA_cdRelatorio",
-                table: "TB_GS_RELATORIO_AMOSTRA",
-                column: "cdRelatorio");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "TB_GS_LOGIN");
-
-            migrationBuilder.DropTable(
-                name: "TB_GS_RELATORIO_AMOSTRA");
-
-            migrationBuilder.DropTable(
                 name: "TB_GS_AMOSTRA_AGUA");
+
+            migrationBuilder.DropTable(
+                name: "TB_GS_LOGIN");
 
             migrationBuilder.DropTable(
                 name: "TB_GS_RELATORIO");

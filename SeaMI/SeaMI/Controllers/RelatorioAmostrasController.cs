@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using SeaMI.Data;
 using SeaMI.Models;
 
@@ -49,8 +51,8 @@ namespace SeaMI.Controllers
         // GET: RelatorioAmostras/Create
         public IActionResult Create()
         {
-            ViewData["cdAmostra"] = new SelectList(_context.AmostrasAgua, "cdAmostra", "cdAmostra");
-            ViewData["cdRelatorio"] = new SelectList(_context.Relatorios, "cdRelatorio", "nmRelatorio");
+            ViewBag.AmostrasAgua = _context.AmostrasAgua.ToList();
+            ViewBag.Relatorios = _context.Relatorios.ToList();
             return View();
         }
 
@@ -61,14 +63,17 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("cdRelatorioAmostra,dsRelatorioAmostra,cdAmostra,cdRelatorio")] RelatorioAmostra relatorioAmostra)
         {
-            if (ModelState.IsValid)
+            try
             {
                 _context.Add(relatorioAmostra);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["cdAmostra"] = new SelectList(_context.AmostrasAgua, "cdAmostra", "cdAmostra", relatorioAmostra.cdAmostra);
-            ViewData["cdRelatorio"] = new SelectList(_context.Relatorios, "cdRelatorio", "nmRelatorio", relatorioAmostra.cdRelatorio);
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
+            }
             return View(relatorioAmostra);
         }
 

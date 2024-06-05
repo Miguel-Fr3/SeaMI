@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using SeaMI.Data;
 using SeaMI.Models;
 
@@ -19,14 +21,14 @@ namespace SeaMI.Controllers
             _context = context;
         }
 
-        // GET: Relatorios
+
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Relatorios.Include(r => r.Usuario);
             return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Relatorios/Details/5
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,31 +47,34 @@ namespace SeaMI.Controllers
             return View(relatorio);
         }
 
-        // GET: Relatorios/Create
+
         public IActionResult Create()
         {
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade");
+            ViewBag.Usuarios = _context.Usuarios.ToList();
             return View();
         }
 
-        // POST: Relatorios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("cdRelatorio,nmRelatorio,dsRelatorio,dtRelatorio,cdUsuario")] Relatorio relatorio)
         {
-            if (ModelState.IsValid)
+            try
             {
                 _context.Add(relatorio);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", relatorio.cdUsuario);
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
+            }
             return View(relatorio);
         }
 
-        // GET: Relatorios/Edit/5
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

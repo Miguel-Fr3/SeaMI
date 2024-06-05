@@ -12,7 +12,7 @@ using SeaMI.Data;
 namespace SeaMI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240605161512_InitialCreate")]
+    [Migration("20240605210521_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -140,34 +140,6 @@ namespace SeaMI.Migrations
                     b.ToTable("TB_GS_RELATORIO", (string)null);
                 });
 
-            modelBuilder.Entity("SeaMI.Models.RelatorioAmostra", b =>
-                {
-                    b.Property<int>("cdRelatorioAmostra")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(10)");
-
-                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("cdRelatorioAmostra"));
-
-                    b.Property<int>("cdAmostra")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<int>("cdRelatorio")
-                        .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("dsRelatorioAmostra")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("NVARCHAR2(200)");
-
-                    b.HasKey("cdRelatorioAmostra");
-
-                    b.HasIndex("cdAmostra");
-
-                    b.HasIndex("cdRelatorio");
-
-                    b.ToTable("TB_GS_RELATORIO_AMOSTRA", (string)null);
-                });
-
             modelBuilder.Entity("SeaMI.Models.Usuario", b =>
                 {
                     b.Property<int>("cdUsuario")
@@ -243,35 +215,6 @@ namespace SeaMI.Migrations
                         .IsRequired();
 
                     b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.RelatorioAmostra", b =>
-                {
-                    b.HasOne("SeaMI.Models.AmostraAgua", "AmostraAgua")
-                        .WithMany("RelatoriosAmostra")
-                        .HasForeignKey("cdAmostra")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SeaMI.Models.Relatorio", "Relatorio")
-                        .WithMany("RelatoriosAmostra")
-                        .HasForeignKey("cdRelatorio")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AmostraAgua");
-
-                    b.Navigation("Relatorio");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.AmostraAgua", b =>
-                {
-                    b.Navigation("RelatoriosAmostra");
-                });
-
-            modelBuilder.Entity("SeaMI.Models.Relatorio", b =>
-                {
-                    b.Navigation("RelatoriosAmostra");
                 });
 
             modelBuilder.Entity("SeaMI.Models.Usuario", b =>

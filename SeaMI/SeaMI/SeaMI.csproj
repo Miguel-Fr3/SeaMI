@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\RelatorioAmostrasController.cs" />
     <Compile Remove="Migrations\20240531162029_primeiramigracao.cs" />
     <Compile Remove="Migrations\20240531162029_primeiramigracao.Designer.cs" />
     <Compile Remove="Migrations\20240531163937_secmigration.cs" />
     <Compile Remove="Migrations\20240531163937_secmigration.Designer.cs" />
+    <Compile Remove="Models\RelatorioAmostra.cs" />
   </ItemGroup>
 
   <ItemGroup>

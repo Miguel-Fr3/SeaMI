@@ -12,7 +12,6 @@ namespace SeaMI.Data
         public DbSet<Login> Logins { get; set; }
         public DbSet<AmostraAgua> AmostrasAgua { get; set; }
         public DbSet<Relatorio> Relatorios { get; set; }
-        public DbSet<RelatorioAmostra> RelatoriosAmostra { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,7 +19,7 @@ namespace SeaMI.Data
             modelBuilder.Entity<Login>().ToTable("TB_GS_LOGIN");
             modelBuilder.Entity<AmostraAgua>().ToTable("TB_GS_AMOSTRA_AGUA");
             modelBuilder.Entity<Relatorio>().ToTable("TB_GS_RELATORIO");
-            modelBuilder.Entity<RelatorioAmostra>().ToTable("TB_GS_RELATORIO_AMOSTRA");
+
 
             modelBuilder.Entity<Login>()
                 .HasOne(l => l.Usuario)
@@ -37,15 +36,6 @@ namespace SeaMI.Data
                 .WithMany(u => u.Relatorios)
                 .HasForeignKey(r => r.cdUsuario);
 
-            modelBuilder.Entity<RelatorioAmostra>()
-                .HasOne(ra => ra.AmostraAgua)
-                .WithMany(a => a.RelatoriosAmostra)
-                .HasForeignKey(ra => ra.cdAmostra);
-
-            modelBuilder.Entity<RelatorioAmostra>()
-                .HasOne(ra => ra.Relatorio)
-                .WithMany(r => r.RelatoriosAmostra)
-                .HasForeignKey(ra => ra.cdRelatorio);
 
             base.OnModelCreating(modelBuilder);
         }

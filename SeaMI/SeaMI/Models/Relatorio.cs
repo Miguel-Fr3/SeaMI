@@ -26,6 +26,5 @@ namespace SeaMI.Models
         public int cdUsuario { get; set; }
         public Usuario Usuario { get; set; }
 
-        public ICollection<RelatorioAmostra> RelatoriosAmostra { get; set; }
     }
 }
