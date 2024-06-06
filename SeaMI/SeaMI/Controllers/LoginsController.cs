@@ -87,7 +87,7 @@ namespace SeaMI.Controllers
             {
                 return NotFound();
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", login.cdUsuario);
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "nmUsuario", login.cdUsuario);
             return View(login);
         }
 
@@ -97,34 +97,20 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("cdLogin,dsEmail,dsSenha,cdUsuario")] Login login)
         {
-            if (id != login.cdLogin)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(login);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LoginExists(login.cdLogin))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(login);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", login.cdUsuario);
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
+            }
             return View(login);
         }
+
 
 
         // GET: Logins/Delete/5

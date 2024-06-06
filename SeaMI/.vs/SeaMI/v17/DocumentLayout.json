@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|c:\\users\\pichau\\desktop\\nova pasta\\seami\\seami\\seami\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46902ADF-9801-4D97-B234-428467F59D52}|SeaMI\\SeaMI.csproj|solutionrelative:seami\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "SeaMI\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Nova pasta\\SeaMI\\SeaMI\\SeaMI\\Models\\Usuario.cs",
-              "RelativeToolTip": "SeaMI\\Models\\Usuario.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:00:16.678Z",
-              "EditorCaption": ""
             }
           ]
         }

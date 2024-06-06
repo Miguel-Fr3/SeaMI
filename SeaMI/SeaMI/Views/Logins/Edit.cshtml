@@ -14,17 +14,17 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="cdLogin" />
             <div class="form-group">
-                <label asp-for="dsEmail" class="control-label"></label>
+                <label asp-for="dsEmail" class="control-label">Email</label>
                 <input asp-for="dsEmail" class="form-control" />
                 <span asp-validation-for="dsEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsSenha" class="control-label"></label>
+                <label asp-for="dsSenha" class="control-label">Senha</label>
                 <input asp-for="dsSenha" class="form-control" />
                 <span asp-validation-for="dsSenha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cdUsuario" class="control-label"></label>
+                <label asp-for="cdUsuario" class="control-label">Usuario</label>
                 <select asp-for="cdUsuario" class="form-control" asp-items="ViewBag.cdUsuario"></select>
                 <span asp-validation-for="cdUsuario" class="text-danger"></span>
             </div>

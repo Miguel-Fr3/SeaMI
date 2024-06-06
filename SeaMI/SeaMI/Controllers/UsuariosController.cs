@@ -54,7 +54,7 @@ namespace SeaMI.Controllers
         // POST: Usuarios/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("nmUsuario,nrRG,nrCpf,dsNacionalidade,nrTelefone,dtNascimento")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("cdUsuario,nmUsuario,nrRG,nrCpf,dsNacionalidade,nrTelefone,dtNascimento, dtCadastro")] Usuario usuario)
         {
             try
             {
@@ -92,30 +92,16 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("cdUsuario,nmUsuario,nrRG,nrCpf,dsNacionalidade,nrTelefone,dtNascimento, dtCadastro")] Usuario usuario)
         {
-            if (id != usuario.cdUsuario)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(usuario);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UsuarioExists(usuario.cdUsuario))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
             }
             return View(usuario);
         }

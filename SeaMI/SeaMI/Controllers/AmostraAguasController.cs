@@ -87,7 +87,7 @@ namespace SeaMI.Controllers
             {
                 return NotFound();
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", amostraAgua.cdUsuario);
+            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "nmUsuario", amostraAgua.cdUsuario);
             return View(amostraAgua);
         }
 
@@ -98,34 +98,20 @@ namespace SeaMI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("cdAmostra,dtColeta,dsPH,dsPoluentesQuimicos,dsNutrientes,dsConcentracaoPlastico,dsOxigenioDissolvido,dsTemperatura,dsTurbidez,cdUsuario")] AmostraAgua amostraAgua)
         {
-            if (id != amostraAgua.cdAmostra)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(amostraAgua);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!AmostraAguaExists(amostraAgua.cdAmostra))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(amostraAgua);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["cdUsuario"] = new SelectList(_context.Usuarios, "cdUsuario", "dsNacionalidade", amostraAgua.cdUsuario);
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+
+            }
             return View(amostraAgua);
         }
+
 
         // GET: AmostraAguas/Delete/5
         public async Task<IActionResult> Delete(int? id)

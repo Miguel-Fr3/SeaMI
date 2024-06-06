@@ -14,22 +14,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="cdRelatorio" />
             <div class="form-group">
-                <label asp-for="nmRelatorio" class="control-label"></label>
+                <label asp-for="nmRelatorio" class="control-label">Nome do relatório</label>
                 <input asp-for="nmRelatorio" class="form-control" />
                 <span asp-validation-for="nmRelatorio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsRelatorio" class="control-label"></label>
+                <label asp-for="dsRelatorio" class="control-label">Descrição do relatório</label>
                 <input asp-for="dsRelatorio" class="form-control" />
                 <span asp-validation-for="dsRelatorio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dtRelatorio" class="control-label"></label>
+                <label asp-for="dtRelatorio" class="control-label">Data do relatório</label>
                 <input asp-for="dtRelatorio" class="form-control" />
                 <span asp-validation-for="dtRelatorio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cdUsuario" class="control-label"></label>
+                <label asp-for="cdUsuario" class="control-label">Usuario</label>
                 <select asp-for="cdUsuario" class="form-control" asp-items="ViewBag.cdUsuario"></select>
                 <span asp-validation-for="cdUsuario" class="text-danger"></span>
             </div>

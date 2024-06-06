@@ -13,47 +13,47 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="dtColeta" class="control-label"></label>
+                <label asp-for="dtColeta" class="control-label">Data de coleta</label>
                 <input asp-for="dtColeta" class="form-control" />
                 <span asp-validation-for="dtColeta" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsPH" class="control-label"></label>
+                <label asp-for="dsPH" class="control-label">PH</label>
                 <input asp-for="dsPH" class="form-control" />
                 <span asp-validation-for="dsPH" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsPoluentesQuimicos" class="control-label"></label>
+                <label asp-for="dsPoluentesQuimicos" class="control-label">Poluentes quimicos</label>
                 <input asp-for="dsPoluentesQuimicos" class="form-control" />
                 <span asp-validation-for="dsPoluentesQuimicos" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsNutrientes" class="control-label"></label>
+                <label asp-for="dsNutrientes" class="control-label">Nutrientes</label>
                 <input asp-for="dsNutrientes" class="form-control" />
                 <span asp-validation-for="dsNutrientes" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsConcentracaoPlastico" class="control-label"></label>
+                <label asp-for="dsConcentracaoPlastico" class="control-label">Concentração de plastico</label>
                 <input asp-for="dsConcentracaoPlastico" class="form-control" />
                 <span asp-validation-for="dsConcentracaoPlastico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsOxigenioDissolvido" class="control-label"></label>
+                <label asp-for="dsOxigenioDissolvido" class="control-label">Oxigenio Dissolvido</label>
                 <input asp-for="dsOxigenioDissolvido" class="form-control" />
                 <span asp-validation-for="dsOxigenioDissolvido" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsTemperatura" class="control-label"></label>
+                <label asp-for="dsTemperatura" class="control-label">Temperatura</label>
                 <input asp-for="dsTemperatura" class="form-control" />
                 <span asp-validation-for="dsTemperatura" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dsTurbidez" class="control-label"></label>
+                <label asp-for="dsTurbidez" class="control-label">Turbidez</label>
                 <input asp-for="dsTurbidez" class="form-control" />
                 <span asp-validation-for="dsTurbidez" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cdUsuario" class="control-label">UsuarioID</label>
+                <label asp-for="cdUsuario" class="control-label">Usuario</label>
                 <select asp-for="cdUsuario" class="form-control">
                     <option value="">Selecione...</option>
                     @foreach (var Usuario in ViewBag.Usuarios)
